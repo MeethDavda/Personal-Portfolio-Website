@@ -1,0 +1,27 @@
+.hello {
+  text-shadow: 4px 4px 5px rgba(107, 107, 107, 0.45);
+}
+.bgm {
+  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0), black),
+    url(../Images/Home_bgm.jpg);
+
+  background-size: 100% 100%;
+}
+
+@media screen and (min-width: 1150px) {
+  .hello {
+    font-size: 6em;
+    width: auto;
+  }
+  .meeth {
+    font-size: 7rem;
+  }
+  .name-section {
+    margin-top: 9em;
+    margin-left: 8em;
+  }
+  .main {
+    margin: 5em 4em;
+  }
+}

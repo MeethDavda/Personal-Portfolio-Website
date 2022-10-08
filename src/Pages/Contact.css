@@ -1,0 +1,17 @@
+.contact {
+  color: rgba(122, 131, 154, 0.371);
+}
+@media screen and (min-width: 1150px) {
+  .contact-inn {
+    font-size: 1.2rem;
+    margin-top: -6.5em;
+    letter-spacing: 1.5em;
+  }
+  .contact {
+    font-size: 9rem;
+    font-weight: 100;
+  }
+  .links {
+    margin-top: 4em;
+  }
+}

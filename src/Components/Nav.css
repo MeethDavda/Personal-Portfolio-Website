@@ -1,0 +1,17 @@
+nav {
+  /* background-color: rgba(38, 45, 58, 0.912); */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0px 8px 100px rgba(0, 0, 0, 0.481);
+}
+
+li:hover {
+  color: rgba(110, 130, 166, 0.899);
+}
+
+@media screen and (min-width: 1150px) {
+  .nav-space {
+    margin-right: 2em;
+    font-size: 1.2rem;
+  }
+}

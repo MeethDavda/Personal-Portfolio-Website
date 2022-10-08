@@ -1,0 +1,56 @@
+img {
+  filter: drop-shadow(6.84477px 6.84477px 6.27437px rgba(0, 0, 0, 0.39));
+}
+button {
+  background: #252d39;
+  box-shadow: 7.98556px 11.4079px 10.2672px rgba(11, 11, 11, 0.412);
+}
+button:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+.nft-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+.nft-image > span {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+  z-index: 100;
+}
+.nft-image > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(177, 177, 177);
+  border-radius: 5px;
+  width: 1000px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1150px) {
+  .image {
+    height: 250px;
+    object-fit: contain;
+  }
+  .card-content {
+    width: 400px;
+    margin-left: 1.5em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .nft-image > img {
+    width: 95%;
+  }
+}

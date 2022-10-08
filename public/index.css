@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600&display=swap");
+* {
+  margin: 10em;
+  font-family: "Inter", sans-serif;
+  /* background-color: rgba(36, 49, 70, 0.919); */
+}
+.body {
+  /* background-color: rgba(34, 41, 52, 1); */
+  /* background-color: rgb(29, 39, 57); */
+  background: linear-gradient(black 10%, rgb(29, 39, 57));
+}

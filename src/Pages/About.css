@@ -1,0 +1,19 @@
+.about {
+  color: rgba(122, 131, 154, 0.371);
+}
+@media screen and (min-width: 1150px) {
+  .about {
+    font-size: 9rem;
+    font-weight: 100;
+  }
+  .about-inn {
+    font-size: 1.2rem;
+    margin-top: -6.4em;
+  }
+  .content {
+    font-size: 1.2rem;
+    /* width: 65%; */
+    margin-left: 18%;
+    margin-right: 18%;
+  }
+}

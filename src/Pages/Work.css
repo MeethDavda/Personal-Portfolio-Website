@@ -1,0 +1,20 @@
+.work {
+  color: rgba(122, 131, 154, 0.371);
+}
+
+@media screen and (min-width: 1150px) {
+  .work {
+    font-size: 10rem;
+    font-weight: 100;
+  }
+  .work-inn {
+    font-size: 1.1rem;
+    margin-top: -5em;
+  }
+  .work-out {
+    margin-bottom: 4em;
+  }
+  .headings {
+    font-size: 1.3rem;
+  }
+}
