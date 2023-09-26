@@ -3,6 +3,9 @@ import "./Home.css";
 // import Typed from "typed.js";
 // import Typical from "react-typical";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import Lottie from "lottie-react";
+import animationData from "../Images/lottie.json";
+import animationData2 from "../Images/lottie2.json";
 
 function Home() {
   const { text } = useTypewriter({
@@ -16,7 +19,7 @@ function Home() {
   return (
     <div className="flex flex-col flex-wrap bgm">
       <div className="flex flex-row flex-wrap justify-center content-center main ">
-        <div className="text-white text-[5.31em] h-36 mx-5  w-[320px] flex justify-center content-center mt-28 hello flex-col ">
+        {/* <div className="text-white text-[5.31em] h-36 mx-5  w-[320px] flex justify-center content-center mt-28 hello flex-col ">
           <div className="flex justify-center content-center  text-center flex-col relative top-11 ">
             <div>
               {text}
@@ -27,9 +30,19 @@ function Home() {
               ___
             </div>
           </div>
+        </div> */}
+        <div>
+          {/* <Lottie
+            animationData={animationData}
+            className="h-[30em] opacity-90"
+          /> */}
+          <Lottie
+            animationData={animationData2}
+            className="h-[27em] opacity-90"
+          />
         </div>
 
-        <div className="text-white flex flex-col h-60 w-auto mx-5 mt-10 name-section">
+        <div className="text-white flex flex-col h-60 w-auto  mt-8 name-section">
           <div className="flex justify-center text-center relative ml-[-4.5em] mb-2 font-extralight text-2xl">
             I AM
           </div>
@@ -43,7 +56,7 @@ function Home() {
         </div>
       </div>
 
-      <footer className="flex flex-row justify-between mt-11">
+      <footer className="flex flex-row justify-between ">
         <div className="text-white ml-4">
           <svg
             width="65"
