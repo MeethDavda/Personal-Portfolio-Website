@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Card.css";
 import Tilt from "react-tilt";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 function Card(props) {
   const [nft, setNft] = useState(false);
@@ -29,15 +31,26 @@ function Card(props) {
           TOOLS : {props.tools}
         </div>
       </div>
-      <button className="text-white tracking-[0.06em] font-normal  w-auto m-auto py-2 px-5 rounded-sm">
-        {!props.nft ? (
-          <a href={props.Ref} target="_blank" rel="noreferrer">
-            VIEW PROJECT
-          </a>
-        ) : (
-          <p onClick={handle}>VIEW PROJECT</p>
+      <div className="flex flex-row justify-center items-center">
+        {!props.nft && (
+          <button className="text-white tracking-[0.06em] font-normal  w-auto m-auto py-2 px-5 rounded-md">
+            <a href={props.gitLink} target="_blank" rel="noreferrer">
+              CODE
+              <GitHubIcon className="mb-1 ml-1" />
+            </a>
+          </button>
         )}
-      </button>
+        <button className="text-white tracking-[0.06em] font-normal  w-auto m-auto py-2 px-5 rounded-md">
+          {!props.nft ? (
+            <a href={props.Ref} target="_blank" rel="noreferrer">
+              LIVE DEMO
+              <OpenInNewIcon className="mb-1 ml-1" />
+            </a>
+          ) : (
+            <p onClick={handle}>LIVE DEMO</p>
+          )}
+        </button>
+      </div>
       {nft && (
         <div className="nft-image">
           <span onClick={handle}>&times;</span>
